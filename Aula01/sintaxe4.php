@@ -12,4 +12,4 @@ $linguagem = "Linguagem PHP.";
 
 <p>Parágrafo mesclando HTML com <?=$linguagem?> </p>
 
-</body>
+</body> 
