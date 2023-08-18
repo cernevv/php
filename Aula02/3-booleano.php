@@ -16,12 +16,56 @@
     </ul>
 
     <!-- Código PHP para booleanos -->
+
+    <?php
+
+        echo true;
+        echo "<br>";
+        echo false;
+
+        if(true) {
+            echo "É verdadeiro! <br>";
+        }
+
+        if(5 > 2) { //true
+            echo "É verdadeiro! <br>";
+        }
+
+        $podeEntrar = true;
+
+        if($podeEntrar) {
+            echo "O usuário pode entrar";
+        }
+
+     ?>
     
     <br><hr>
     <h2>Função de verificação</h2>
     <p>Para saber se é booleano usamos a função is_bool()</p>
 
     <!-- Código PHP para verificar booleanos -->
+
+    <?php
+
+        $a = true;
+
+        if(is_bool($a)) {
+            echo "É um booleando 1 <br>";
+        }
+
+        if(is_bool(0)) {
+            echo "É um booleando 2 <br>";
+        }
+
+        if(is_bool(false)) {
+            echo "É um booleando 3 <br>";
+        }
+
+        if(is_bool(0.0 == false)) {
+            echo "0 é considerado falso! <br>";
+        }
+    
+    ?>
     
 </body>
 </html>
