@@ -69,8 +69,8 @@
 
     <?php
 
-    $laura = 15;
-    echo "- Quantos pães você come por dia? <br> - $laura - Disse a Laura.";
+    $navemae = 15;
+    echo "- Quantos pães você come por dia? <br> - $navemae - Disse a Nave Mãe.";
     
     ?>
 
