@@ -71,7 +71,24 @@
     </ul>
 
     <!-- Criar aqui seu programa PHP -->
-    
+
+    <?php
+
+    $minhavariavel = 5;
+
+    if ($minhavariavel > 1) {
+        echo " o valor da minha variável é maior que 1."; 
+    }
+
+    ?>
+
+    <br>
+
+    <?php
+
+    if($minhavariavel>1) echo "a variável tem o valor maior que 1";
+
+    ?>
     
     <hr>
     
@@ -121,8 +138,18 @@
     <hr>
 
     <!-- Criar aqui seu programa PHP -->
+    <h3>Ultrabook ASUS</h3>
+        <?php
 
-    
+        $a = 0;
+
+        if ($a < 14 ) {
+            echo '<mark>Urgente</mark>';
+            echo  '<p class="repor"> Necessário comprar </p>'; 
+        } else {
+            echo '<p class="ok"> Fica tranquilo, estoque OK!</p>';
+        }
+        ?>
     <hr>
 
     <!-- ___________________________________________________________________ -->
@@ -168,6 +195,27 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
+
+    <h3>Lista de opções</h1>
+        <h5>1 - Pastel</h5>
+        <h5>2 - Pizza</h5>
+        <h5>3 - Esfiha</h5>
+        
+        <?php
+        $opção = 1;
+            if($opção == 1) {
+                $opçaoEscolhida = "Pastel";
+            } elseif ($opção == 2) {
+                $opçaoEscolhida = "Pizza";
+            } elseif ($opção == 3) {
+                $opçaoEscolhida = "Esfiha";
+            } else {
+                $opçaoEscolhida = "Opção inválida";
+            }
+
+            echo "<p>$opçaoEscolhida</p>";
+
+        ?>
     
     <hr>
 
@@ -203,7 +251,17 @@
 
     <!-- Criar aqui seu programa PHP -->
     
-    
+    <?php
+
+        switch($opção) {
+            case 1: $pedido = "Pastel"; break;
+            case 2: $pedido = "Pizza"; break;
+            case 3: $pedido = "Esfirra"; break;
+            default: $pedido = "Opção Inválida"; break;
+        }
+
+        echo "<p>$pedido</p>";
+    ?>
     <!-- Rodapé -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
