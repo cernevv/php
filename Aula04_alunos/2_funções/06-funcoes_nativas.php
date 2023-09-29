@@ -16,15 +16,24 @@
 // Trim(param) -> Remove espaços antes e depois de strings
 $nome = "Ignacio Cunha        ";
 $nomeSemEspaco = trim($nome);
+
+$nome2 = "Laura Cernev         ";
 ?>
 
-<!-- 1ª Digitação (Aqui) -->
+<pre> <?=var_dump($nome2)?> </pre>
+<pre> <?=var_dump($nome2)?> </pre>
 
 <!-- ___________________________________________________________ -->
 <!-- Substitui um texto por outro-->
 <h3>str_replace</h3>
 <?php
 $fraseFeia = "<p>Fulano é um bobão e xarope</p>";
+
+$fraseBonita = str_replace(
+    ["bobão", "xarope"],
+    ["cara legal", "genial"],
+    $fraseFeia
+);
 
 
 //  2ª Digitação (Aqui)
@@ -40,9 +49,17 @@ echo $fraseBonita;
 $linguagens = "HTML - CSS - JS";
 $arrayLinguagens = explode(" - ", $linguagens);
 
+$Laura = "Laura Cernev Cesar";
+$arrayLaura = explode(" ", $Laura);
+
 ?>
 
-<!-- 3ª Digitação (Aqui) -->
+<pre> <?=var_dump($linguagens)?> </pre>
+<pre> <?=var_dump($arrayLinguagens)?> </pre>
+
+<pre> <?=var_dump($Laura)?> </pre>
+<pre> <?=var_dump($arrayLaura)?> </pre>
+
 
 <!-- ___________________________________________________________ -->
 <hr>
